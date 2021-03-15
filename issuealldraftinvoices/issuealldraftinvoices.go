@@ -69,7 +69,6 @@ func main() {
 			invToUpdate.Id = invoice.Id
 			draft := false
 			invToUpdate.Draft = draft
-			invToUpdate.Sent = true
 			err := invToUpdate.Save()
 
 			if err != nil {
